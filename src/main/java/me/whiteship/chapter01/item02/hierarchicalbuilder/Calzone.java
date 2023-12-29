@@ -16,7 +16,7 @@ public class Calzone extends Pizza {
             return new Calzone(this);
         }
 
-        @Override protected Builder self() { return this; }
+        @Override protected Builder self222() { return this; }
     }
 
     private Calzone(Builder builder) {

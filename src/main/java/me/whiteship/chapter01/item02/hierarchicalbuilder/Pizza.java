@@ -17,14 +17,14 @@ public abstract class Pizza {
         EnumSet<Topping> toppings = EnumSet.noneOf(Topping.class);
         public T addTopping(Topping topping) {
             toppings.add(Objects.requireNonNull(topping));
-            return self();
+            return self222();
         }
 
         abstract Pizza build();
 
         // 하위 클래스는 이 메서드를 재정의(overriding)하여
         // "this"를 반환하도록 해야 한다.
-        protected abstract T self();
+        protected abstract T self222();
     }
     
     Pizza(Builder<?> builder) {
