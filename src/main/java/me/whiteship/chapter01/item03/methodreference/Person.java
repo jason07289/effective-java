@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 public class Person {
@@ -41,6 +42,7 @@ public class Person {
 
         Function<LocalDate, Person> function = Person::new;//변수로 뺄 수도 있다.
         //Person::new; 메서드 레퍼런스 사용시 Person()를 참조하고 싶을 경우?
+        Supplier<Person> supplier = Person::new;
 
 
         List<Person> people = new ArrayList<>();
